@@ -1,11 +1,12 @@
 class CoinCounter
-  attr_reader(:coin)
   attr_accessor(:cents)
+  attr_reader(:coin)
+
 
 
   def initialize(cents)
-    @coin = {0.25 => "quarter", 0.10 => "dime", 0.05 => "nickel", 0.01 => "penny"}
     @cents = cents
+    @coin = {0.25 => "quarter", 0.10 => "dime", 0.05 => "nickel", 0.01 => "penny"}
   end
 end
 
