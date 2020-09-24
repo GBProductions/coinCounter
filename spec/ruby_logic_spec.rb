@@ -17,11 +17,16 @@ describe ('CoinCounter#initialize') do
     test = CoinCounter.new(0.25)
     expect(test.coin.fetch(0.10)).to(eq("dime"))
   end
-end
 
-describe ('CoinCounter#coin_bank') do
-  it('initializes coin counters at 0') do
-    test = CoinCounter.new(0.23)
-    expect(test.coin_bank).to(eq(2))
+  it('gets return value from money_loop') do
+    test = CoinCounter.new(0.25)
+    expect(test.money_loop.to(eq(1)))
   end
 end
+
+# describe ('CoinCounter#coin_bank') do
+#   it('initializes coin counters at 0') do
+#     test = CoinCounter.new(0.23)
+#     expect(test.coin_bank).to(eq(0))
+#   end
+# end
