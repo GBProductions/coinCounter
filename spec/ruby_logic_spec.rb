@@ -18,3 +18,5 @@ describe ('CoinCounter#initialize') do
     expect(test.coin.fetch(0.10)).to(eq("dime"))
   end
 end
+
+describe ('')
