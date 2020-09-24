@@ -19,4 +19,9 @@ describe ('CoinCounter#initialize') do
   end
 end
 
-describe ('')
+describe ('CoinCounter#coin_bank') do
+  it('initializes coin counters at 0') do
+    test = CoinCounter.new(0.23)
+    expect(test.coin_bank).to(eq(2))
+  end
+end
